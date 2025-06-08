@@ -75,7 +75,7 @@ G4Material* world_mat = nist->FindOrBuildMaterial("G4_AIR");
 G4Box* solidWorld = new G4Box("WorldBox", 75*cm, 75*cm, 75*cm);
 G4LogicalVolume* logicWorld = new G4LogicalVolume(solidWorld, world_mat, "LogicalWorld");
 G4VPhysicalVolume* physWorld = new G4PVPlacement(0, G4ThreeVector(), logicWorld, "World", 0, false, 0, checkOverlaps);                 
-//Uranium source                              
+//Cobalt source                              
 G4Material* matCo = nist->FindOrBuildMaterial("G4_Co");
 G4Box* CoBox = new G4Box("CoBox", 7.5*cm, 4.5*cm, 7.5*cm);     
 G4LogicalVolume* LogCo = new G4LogicalVolume(CoBox, matCo, "LogicmatCo");   
